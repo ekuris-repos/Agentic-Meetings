@@ -1,0 +1,12 @@
+# Requirements for watch-meeting.py
+# This script uses only Python standard library modules
+# No external dependencies required!
+
+# Minimum Python version: 3.7
+# Recommended Python version: 3.10+
+
+# If you want to add optional development tools:
+# pytest>=7.0.0          # For testing
+# mypy>=1.0.0            # For type checking
+# black>=23.0.0          # For code formatting
+# pylint>=2.15.0         # For linting

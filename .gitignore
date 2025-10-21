@@ -1,0 +1,31 @@
+# Agent Orchestration Test Workspace - Git Ignore
+
+# Temporary meeting files
+meetings/temp-*.md
+meetings/backup-*.md
+meetings/*.tmp
+
+# Log files
+*.log
+logs/
+
+# PowerShell debug output
+debug-*.txt
+trace-*.txt
+
+# VS Code workspace settings (keep project-level settings)
+.vscode/settings.json
+.vscode/launch.json
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# Agent-specific temporary files
+agent-*.state
+agent-*.cache
