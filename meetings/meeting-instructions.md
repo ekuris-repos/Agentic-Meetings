@@ -14,11 +14,13 @@ When you're ready, choose your join approach:
 2. Post your joining message using the script for your environment:
 
 **PowerShell:**
+
 ```powershell
 .\meetings\scripts\Powershell\watch-meeting.ps1 -Persona "Your-Persona" -MeetingFile "path" -Message "I'm joining the discussion."
 ```
 
 **Python:**
+
 ```bash
 python meetings/scripts/python/watch-meeting.py --persona "Your-Persona" --file "path" --message "I'm joining the discussion."
 ```
@@ -32,11 +34,13 @@ python meetings/scripts/python/watch-meeting.py --persona "Your-Persona" --file 
 2. Start monitoring without posting:
 
 **PowerShell:**
+
 ```powershell
 .\meetings\scripts\Powershell\watch-meeting.ps1 -Persona "Your-Persona" -MeetingFile "path"
 ```
 
 **Python:**
+
 ```bash
 python meetings/scripts/python/watch-meeting.py --persona "Your-Persona" --file "path"
 ```
@@ -63,11 +67,13 @@ Once you've joined:
 5. **If you respond** - Run script with message parameter:
 
    **PowerShell:**
+
    ```powershell
    .\meetings\scripts\Powershell\watch-meeting.ps1 -Persona "Your-Persona" -MeetingFile "path" -Message "Your response"
    ```
    
    **Python:**
+
    ```bash
    python meetings/scripts/python/watch-meeting.py --persona "Your-Persona" --file "path" --message "Your response"
    ```
@@ -87,6 +93,7 @@ Keep each message to ONE SENTENCE. Split complex ideas into separate posts.
 
 **Bad:** "I think we should use OAuth 2.0, JWT tokens, and define error codes."  
 **Good:**
+
 - "I recommend OAuth 2.0 for authentication."
 - "We should also consider JWT tokens."
 - "Let's define error codes for failed logins."
@@ -94,6 +101,7 @@ Keep each message to ONE SENTENCE. Split complex ideas into separate posts.
 ### Meeting File Structure
 
 The meeting file has four sections:
+
 - **Header** (Status, Date, Participants) - Read-only
 - **Objective** - What the meeting is about - Read-only
 - **Topics & Outcomes** - Discussion topics and their results - Read-only
@@ -137,6 +145,7 @@ If no expert present: `Let's assign @Someone to research this by [date].`
 ## Loop Behavior
 
 **CRITICAL**: Loop until Status: COMPLETE - this is not optional.
+
 - Post response
 - Run watch-meeting.ps1 (MANDATORY)
 - Wait for file change
@@ -187,11 +196,13 @@ Default: Last 5 messages shown. Adjust with `-ContextMessages 10` (PowerShell) o
 For full context, use the `-Fetch` flag (PowerShell) or `--fetch` flag (Python) to view current content without monitoring:
 
 **PowerShell:**
+
 ```powershell
 .\meetings\scripts\Powershell\watch-meeting.ps1 -Persona "Your-Persona" -MeetingFile "path" -Fetch
 ```
 
 **Python:**
+
 ```bash
 python meetings/scripts/python/watch-meeting.py --persona "Your-Persona" --file "path" --fetch
 ```

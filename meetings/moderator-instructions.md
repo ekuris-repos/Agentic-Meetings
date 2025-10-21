@@ -29,11 +29,13 @@ The moderator is responsible for:
 2. **Post opening message** to kick off discussion:
 
 **PowerShell:**
+
 ```powershell
 .\meetings\scripts\Powershell\watch-meeting.ps1 -Persona "Product-Manager" -MeetingFile "meetings/active/vscode-extension-design.md" -Message "Welcome everyone! We're designing a VS Code extension. Let's start with Topic 1: Core extension architecture. @Backend-Architect, what's your recommendation?"
 ```
 
 **Python:**
+
 ```bash
 python meetings/scripts/python/watch-meeting.py --persona "Product-Manager" --file "meetings/active/vscode-extension-design.md" --message "Welcome everyone! We're designing a VS Code extension. Let's start with Topic 1: Core extension architecture. @Backend-Architect, what's your recommendation?"
 ```
@@ -54,7 +56,6 @@ While the meeting is running:
 ```
 
 3. **Document Outcomes**: Edit Outcomes section first, THEN post via `-Message`. This keeps script waiting for agent responses, not your edits.
-
 4. **Keep track of progress** - Mentally note which topics have outcomes vs. which need more discussion
 5. **Ask clarifying questions** - If outcomes are vague, push for specifics via Script:
 
@@ -99,11 +100,13 @@ This will:
 ### Posting a Message (with auto-timestamp)
 
 **PowerShell:**
+
 ```powershell
 .\meetings\scripts\Powershell\watch-meeting.ps1 -Persona "Product-Manager" -MeetingFile "meetings/active/meeting.md" -Message "Your message here"
 ```
 
 **Python:**
+
 ```bash
 python meetings/scripts/python/watch-meeting.py --persona "Product-Manager" --file "meetings/active/meeting.md" --message "Your message here"
 ```
@@ -111,11 +114,13 @@ python meetings/scripts/python/watch-meeting.py --persona "Product-Manager" --fi
 ### Monitoring Without Posting
 
 **PowerShell:**
+
 ```powershell
 .\meetings\scripts\Powershell\watch-meeting.ps1 -Persona "Product-Manager" -MeetingFile "meetings/active/meeting.md"
 ```
 
 **Python:**
+
 ```bash
 python meetings/scripts/python/watch-meeting.py --persona "Product-Manager" --file "meetings/active/meeting.md"
 ```
@@ -123,11 +128,13 @@ python meetings/scripts/python/watch-meeting.py --persona "Product-Manager" --fi
 ### Ending the Meeting
 
 **PowerShell:**
+
 ```powershell
 .\meetings\scripts\Powershell\watch-meeting.ps1 -Persona "Product-Manager" -MeetingFile "meetings/active/meeting.md" -EndMeeting
 ```
 
 **Python:**
+
 ```bash
 python meetings/scripts/python/watch-meeting.py --persona "Product-Manager" --file "meetings/active/meeting.md" --end-meeting
 ```
@@ -135,11 +142,13 @@ python meetings/scripts/python/watch-meeting.py --persona "Product-Manager" --fi
 ### Fetching Current Content (No Monitoring)
 
 **PowerShell:**
+
 ```powershell
 .\meetings\scripts\Powershell\watch-meeting.ps1 -Persona "Product-Manager" -MeetingFile "meetings/active/meeting.md" -Fetch
 ```
 
 **Python:**
+
 ```bash
 python meetings/scripts/python/watch-meeting.py --persona "Product-Manager" --file "meetings/active/meeting.md" --fetch
 ```
@@ -156,7 +165,8 @@ python meetings/scripts/python/watch-meeting.py --persona "Product-Manager" --fi
 ## Outcome Documentation Best Practices
 
 **Good outcome format:**
-```
+
+``` markdown
 Topic 1 - Core extension architecture:
 Decision: TypeScript for cross-platform compatibility
 Structure: src/, out/, media/ folders; tRPC for IPC, React for UI

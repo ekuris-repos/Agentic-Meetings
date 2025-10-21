@@ -17,6 +17,7 @@ This repository provides a complete framework for multi-agent collaboration wher
 | Path/Folder                | Description                                 |
 |----------------------------|---------------------------------------------|
 | `.github/chatmodes/`       | Agent persona definitions (Backend-Architect, Frontend-Developer, Tech-Lead, DevOps-Engineer, Product-Manager, QA-Engineer, Security-Engineer, UX-Designer, Mobile-Developer, Data-Engineer) |
+| `.github/prompts/`         | Quick-start prompts accessible via `/prompt` command for common workflows |
 | `.github/copilot-instructions.md` | Workspace-specific guidelines for all agents |
 | `meetings/meeting-instructions.md` | Complete protocol and etiquette for agent participation |
 | `meetings/moderator-instructions.md` | Guidelines for facilitating agentic meetings |
@@ -39,6 +40,52 @@ An **Agentic Meeting** is a structured collaboration session where multiple AI a
 - **Role-based participation** - Each agent brings domain expertise (backend, frontend, DevOps, product strategy, etc.)
 - **Protocol-driven** - Agents follow standardized instructions for joining, monitoring, responding, and completing meetings
 - **Auditable transcripts** - Complete record of all agent contributions with timestamps and reasoning
+
+## 🎬 Quick Start with Prompts
+
+This repository includes built-in prompts accessible via the `/prompt` command in GitHub Copilot Chat to streamline common workflows:
+
+### Available Prompts
+
+| Prompt Command | Purpose | Who Uses It |
+|----------------|---------|-------------|
+| `/prompt setup-meeting` | Create a new agentic meeting from template | Moderators, Meeting initiators |
+| `/prompt join-meeting` | Join an active meeting as an agent persona | All agent chatmodes |
+| `/prompt moderate-meeting` | Facilitate and close meetings | Moderators only |
+| `/prompt respond-meeting` | Post responses during active discussions | All participating agents |
+| `/prompt review-protocol` | Quick reference for protocol rules | Everyone |
+
+### How to Use Prompts
+
+1. **Open GitHub Copilot Chat** in VS Code
+2. **Type `/prompt`** and you'll see the available prompts
+3. **Select the prompt** you need for your current task
+4. **Follow the instructions** provided by the prompt
+
+### Example Workflow
+
+**Setting up a new meeting:**
+
+``` text
+You: /prompt setup-meeting
+[Follow the prompt instructions to create meetings/active/api-redesign.md]
+```
+
+**Inviting an agent to join:**
+
+``` text
+You (to Backend-Architect Personna): /prompt join-meeting
+Agent: [Reads meeting, posts joining message, begins monitoring loop]
+```
+
+**Moderating the discussion:**
+
+``` text
+You: /prompt moderate-meeting
+[Use guidance to document outcomes and close when complete]
+```
+
+Simply type `/prompt` in Copilot Chat and select the workflow you need!
 
 ### Starting a Meeting
 
@@ -82,11 +129,13 @@ An **Agentic Meeting** is a structured collaboration session where multiple AI a
 The moderator closes the meeting using the watch script's `-EndMeeting` flag:
 
 **PowerShell:**
+
 ```powershell
 .\meetings\scripts\Powershell\watch-meeting.ps1 -Persona "Moderator-Name" -MeetingFile "meetings/active/file.md" -EndMeeting
 ```
 
 **Python:**
+
 ```bash
 python meetings/scripts/python/watch-meeting.py --persona "Moderator-Name" --file "meetings/active/file.md" --end-meeting
 ```
