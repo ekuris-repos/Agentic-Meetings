@@ -85,6 +85,24 @@ Once you've joined:
 
 You MUST continue running the watch script after every response. The loop is not optional - it's required until the moderator changes Status to COMPLETE. Even if you think the conversation might be winding down, keep monitoring until explicitly told to stop.
 
+## Feature Specification Protocol
+
+When discussing feature implementation:
+
+1. **Reference Gherkin files** - If feature files exist in `features/`, cite specific scenarios
+2. **QA-Engineer validates** - @QA-Engineer ensures implementations match Given-When-Then criteria
+3. **Link features to outcomes** - Document which .feature files are satisfied by each outcome
+4. **Validation before approval** - No implementation is approved without QA-Engineer verification against scenarios
+5. **Create features when missing** - If no .feature file exists, QA-Engineer can propose Gherkin scenarios
+
+### Example Feature Reference Flow
+
+```markdown
+@QA-Engineer, please review the proposed authentication implementation 
+against the scenarios in features/authentication.feature and confirm 
+all Given-When-Then conditions are satisfied.
+```
+
 ## Communication Etiquette
 
 ### Message Guidelines

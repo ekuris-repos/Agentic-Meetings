@@ -175,10 +175,34 @@ Next: @Tech-Lead scaffolds by EOD tomorrow
 
 (Vague: "Use TypeScript" ❌ - add details ✅)
 
+## Gherkin Feature Validation
+
+When feature implementation is discussed:
+
+1. **Identify relevant feature files** - Check if .feature files exist in `features/` directory
+2. **Reference in meeting setup** - List applicable feature files in "Feature Files Referenced" section
+3. **Invoke QA-Engineer validation** - Use @QA-Engineer to verify implementations against Gherkin scenarios
+4. **Document feature satisfaction** - In Outcomes, note which feature file scenarios are satisfied
+
+### Example Moderator Message for Gherkin Validation
+
+```powershell
+.\meetings\scripts\Powershell\watch-meeting.ps1 -Persona "Product-Manager" -MeetingFile "meetings/active/auth-feature.md" -Message "@QA-Engineer, can you verify the proposed login flow satisfies all scenarios in features/authentication.feature?"
+```
+
+### Validation Checklist Before Closing Meeting
+
+When implementations are proposed:
+- [ ] Relevant feature files identified and listed
+- [ ] QA-Engineer has validated against Given-When-Then scenarios
+- [ ] All feature file scenarios addressed in Outcomes
+- [ ] Any new scenarios needed are documented for future .feature files
+
 ## Moderator Responsibilities Checklist
 
 - [ ] Meeting file created with all placeholders replaced
 - [ ] Topics for Discussion listed (numbered)
+- [ ] Feature Files Referenced section completed (if applicable)
 - [ ] Outcomes section prepared with matching headers (EMPTY)
 - [ ] Participants @mentioned (including yourself as moderator)
 - [ ] Opening message posted to kick off discussion
@@ -187,6 +211,7 @@ Next: @Tech-Lead scaffolds by EOD tomorrow
 - [ ] Outcomes being filled as topics resolve
 - [ ] All participants heard from (at least once)
 - [ ] No topics left without outcomes
+- [ ] Feature file scenarios validated by QA-Engineer (if applicable)
 - [ ] All agents agree meeting is complete
 - [ ] `-EndMeeting` called to mark Status: COMPLETE
 
