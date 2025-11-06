@@ -29,6 +29,17 @@ Quick start:
 2. [Topic 2]
 3. [Topic 3]
 
+## Feature Files Referenced
+
+[List any .feature files from the features/ directory relevant to this meeting's discussions]
+
+Example:
+- `features/authentication.feature` - Login flow scenarios
+- `features/user-profile.feature` - Profile management
+- `features/api-validation.feature` - API contract validation
+
+[Leave empty if no feature files apply to this meeting]
+
 ## Outcomes
 
 **Topic 1 - [Topic Name]:**  
