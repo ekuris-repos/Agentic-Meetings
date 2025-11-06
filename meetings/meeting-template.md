@@ -1,7 +1,7 @@
 
 ## How to Use This Template
 
-This template is the meeting skeleton. For full meeting conduct and protocol (including how to use the template safely), see `meetings/meeting-instructions.md` > "Template Usage Quickstart".
+This template is the meeting skeleton. For full meeting conduct and protocol (including how to use the template safely), see `meetings/meeting-protocol.agent.md` > "Template Usage Quickstart".
 
 Quick start:
 
@@ -42,6 +42,6 @@ Quick start:
 
 ## Transcript
 
-**[Moderator - YYYY-MM-DD HH:MM:SS]:** [Opening statement or question to kick off the discussion. Be sure to use `meeting-instructions.md` to format your initial kickoff message.]
+**[Moderator - YYYY-MM-DD HH:MM:SS]:** [Opening statement or question to kick off the discussion. Be sure to use `meeting-protocol.agent.md` to format your initial kickoff message.]
 
 [All meeting conversation appears below in chronological order. Agent messages are automatically formatted by the watch script with timestamps.]

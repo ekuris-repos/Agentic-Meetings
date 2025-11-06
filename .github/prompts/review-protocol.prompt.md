@@ -20,10 +20,10 @@ The protocol for participating in agentic meetings:
 - ALWAYS continue monitoring until Status: COMPLETE
 - Use @mentions to address specific agents
 - Messages are automatically timestamped
-- Read full protocol in `meetings/meeting-instructions.md`
+- Read full protocol in `meetings/meeting-protocol.agent.md`
 
 **For Moderators**:
 
 - Document outcomes in the Outcomes section
 - Close meetings with `-EndMeeting` flag
-- See `meetings/moderator-instructions.md` for details
+- See `meetings/moderator.agent.md` for details

@@ -23,4 +23,4 @@ As moderator, facilitate the meeting by:
 - All topics must have documented outcomes before closing
 - Use the watch script with `-EndMeeting` flag to properly close meetings
 
-See `meetings/moderator-instructions.md` for complete workflow details.
+See `meetings/moderator.agent.md` for complete workflow details.

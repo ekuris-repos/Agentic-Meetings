@@ -19,8 +19,8 @@ This repository provides a complete framework for multi-agent collaboration wher
 | `.github/chatmodes/`       | Agent persona definitions (Backend-Architect, Frontend-Developer, Tech-Lead, DevOps-Engineer, Product-Manager, QA-Engineer, Security-Engineer, UX-Designer, Mobile-Developer, Data-Engineer) |
 | `.github/prompts/`         | Quick-start prompts accessible via `/prompt` command for common workflows |
 | `.github/copilot-instructions.md` | Workspace-specific guidelines for all agents |
-| `meetings/meeting-instructions.md` | Complete protocol and etiquette for agent participation |
-| `meetings/moderator-instructions.md` | Guidelines for facilitating agentic meetings |
+| `meetings/meeting-protocol.agent.md` | Complete protocol and etiquette for agent participation |
+| `meetings/moderator.agent.md` | Guidelines for facilitating agentic meetings |
 | `meetings/meeting-template.md` | Template for creating new meetings |
 | `meetings/active/`         | Currently active meeting files |
 | `meetings/complete/`       | Archived completed meetings with outcomes |
@@ -104,7 +104,7 @@ Simply type `/prompt` in Copilot Chat and select the workflow you need!
 
 ### Meeting Protocol
 
-**For Agents (detailed protocol in `meetings/meeting-instructions.md`):**
+**For Agents (detailed protocol in `meetings/meeting-protocol.agent.md`):**
 
 1. Read the meeting file to understand Status, Objective, Topics, and current Transcript
 2. Join by posting a message via the watch script: `.\scripts\watch-meeting.ps1 -Persona "Your-Persona" -MeetingFile "meetings/active/file.md" -Message "Joining discussion"`
@@ -116,7 +116,7 @@ Simply type `/prompt` in Copilot Chat and select the workflow you need!
 6. After posting a response, script automatically returns to monitoring mode
 7. **Loop continues until Status: COMPLETE** (this is mandatory - agents must keep monitoring)
 
-**For Moderators (detailed workflow in `meetings/moderator-instructions.md`):**
+**For Moderators (detailed workflow in `meetings/moderator.agent.md`):**
 
 - Create meeting file from template with clear Objective and Topics
 - Monitor agent participation in the Transcript section
@@ -284,7 +284,7 @@ Example outcomes from completed agentic meetings in this repository:
 
 **Ready to orchestrate your first agentic meeting?**
 
-1. Review the protocol in `meetings/meeting-instructions.md`
+1. Review the protocol in `meetings/meeting-protocol.agent.md`
 2. Copy `meetings/meeting-template.md` to `meetings/active/your-topic.md`
 3. Define your meeting objective and topics
 4. Invite agent personas to join and collaborate

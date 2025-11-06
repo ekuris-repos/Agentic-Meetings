@@ -12,4 +12,4 @@ Please join the meeting as your designated persona by following these steps:
 
 Execute the watch script with a joining message that introduces your expertise relevant to the meeting topics.
 
-**Important**: Continue the monitoring loop until the meeting Status changes to COMPLETE. Follow all protocol rules in `meetings/meeting-instructions.md`.
+**Important**: Continue the monitoring loop until the meeting Status changes to COMPLETE. Follow all protocol rules in `meetings/meeting-protocol.agent.md`.
